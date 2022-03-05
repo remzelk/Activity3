@@ -70,7 +70,7 @@ class HomeController extends Controller
     public function destroy($id)
     {
         $this->students[$id] -> delete();
-        return view('Home.index', ['students'=>$this->students[$id]]);
+        return view('Home.index', ['students'=>$this->students]);
     }
     
    
